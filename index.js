@@ -71,7 +71,7 @@ module.exports.toICNS = function(file, cb) {
                 return;
             }
 
-            cb(data);
+            cb(undefined, data);
             fs.unlink(outpath);
         });
     });
